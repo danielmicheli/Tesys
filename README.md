@@ -27,9 +27,8 @@ kubectl apply -f k8s/department-deployment.yaml
 kubectl apply -f k8s/employee-deployment.yaml
 kubectl apply -f k8s/api-gateway-deployment.yaml
 ```
-Posso accedere al service tramite ip di minikube o tramite un ingress in questo caso l'ingress per l'apigateway è "api.example.com"
+Posso accedere ai servizi tramite ip di minikube o tramite un ingress in questo caso l'ingress per l'apigateway è "api.example.com"
 
-# Opzionale
 ## Ottengo ip di minikube
 ```plaintext
 minikube ip
