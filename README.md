@@ -21,6 +21,8 @@ L'architettura del progetto è stata trasformata da monolitica a microservizi. O
                      |     Employee    |       
                      +-----------------+
 
+```
+
 ### Microservices
 ## Department Service
 Gestisce tutte le operazioni relative ai dipartimenti.
