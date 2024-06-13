@@ -42,16 +42,16 @@ L'API Gateway è il punto di ingresso per tutte le richieste client. Smista le r
 
 
 ## Utilizzo di Docker
-Costruisci i container Docker
+Costruisci i container Docker:
 ```plaintext
 docker-compose build
 ```
-Avvia i servizi
+Avvia i servizi:
 ```plaintext
 docker-compose up
 ```
 ## Usage
 Una volta avviati i servizi, puoi accedere agli endpoint tramite l'API Gateway.
 
-Department Service: http://localhost:8080/departments
+Department Service: http://localhost:8080/departments <br>
 Employee Service: http://localhost:8080/employees
