@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: employeeservice
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: DMicheli%05
+    url: jdbc:sqlserver://192.168.0.51\sqlexpress:53195;databaseName=CORSO2024;encrypt=true;trustServerCertificate=true
+    username: dmicheli
+  jackson:
+    date-format: yyyy-MM-dd
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+    show-sql: true
+
+server:
+  port: 8082  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8083/eureka
+      fetchRegistry: true
+      registerWithEureka: true
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
