@@ -2,7 +2,7 @@
 
 ## Overview
 
-Tesys è un progetto che originariamente era una applicazione monolitica. Recentemente, ho trasformato l'applicazione in una architettura basata su microservizi, aggiungendo un API Gateway per gestire le richieste tra i vari servizi.
+Lo scopo del progetto era quella di trasformare la mia applicazione monolitica in un applicazione a microservizi contenitorizzata tramite Docker, aggiungendo un API Gateway per gestire le richieste tra i vari servizi.
 
 ## Architecture
 
@@ -12,11 +12,11 @@ L'architettura del progetto è stata trasformata da monolitica a microservizi. O
 
 ```plaintext
 +--------------+        +-----------------+       +-----------------+
-|  API Client  +------->+   API Gateway   +------>+  Microservice 1 |
+|  API Client  +------->+   API Gateway   +------>+    Department   |
 +--------------+        +-----------------+       +-----------------+
                            |       ^                       
                            |       |                  
                            v       |                  
                      +-----------------+       
-                     |  Microservice 2 |       
+                     |     Employee    |       
                      +-----------------+       
