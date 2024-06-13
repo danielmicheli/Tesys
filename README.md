@@ -57,6 +57,6 @@ docker-compose up
 ## Usage
 Una volta avviati i servizi, puoi accedere agli endpoint tramite l'API Gateway.
 
-Department Service: http://localhost:8080/department
-Employee Service: http://localhost:8080/employees
+Department Service: http://localhost:8080/department <br>
+Employee Service: http://localhost:8080/employees <br>
 Eureka Server Dashboard: http://localhost:8761
