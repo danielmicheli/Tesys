@@ -39,3 +39,20 @@ Tecnologie: Spring Boot, Microsoft SQL Server
 
 ## API Gateway
 L'API Gateway è il punto di ingresso per tutte le richieste client. Smista le richieste ai vari microservizi. 
+
+
+Utilizzo di Docker
+Costruisci i container Docker
+
+bash
+Copia codice
+docker-compose build
+Avvia i servizi
+
+docker-compose up
+
+Usage
+Una volta avviati i servizi, puoi accedere agli endpoint tramite l'API Gateway.
+
+Department Service: http://localhost:8080/api/departments
+Employee Service: http://localhost:8080/api/employees
