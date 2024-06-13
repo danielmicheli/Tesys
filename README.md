@@ -21,4 +21,42 @@ L'architettura del progetto è stata trasformata da monolitica a microservizi. O
                      +-----------------+           +-----------------+
                      |  Eureka Server  |           |     Employee    |
                      +-----------------+           +-----------------+
-                                  
+   ```                               
+# Microservices
+## Department Service
+Gestisce tutte le operazioni relative ai dipartimenti.
+
+Endpoint: /department <br>
+Tecnologie: Spring Boot, Microsoft SQL Server
+
+## Employee Service
+Gestisce tutte le operazioni relative ai dipendenti.
+
+Endpoint: /employee <br>
+Tecnologie: Spring Boot, Microsoft SQL Server
+
+## API Gateway
+L'API Gateway è il punto di ingresso per tutte le richieste client. Smista le richieste ai vari microservizi.
+
+## Eureka Server
+Eureka Server gestisce il service discovery, permettendo ai microservizi di registrarsi e scoprire altri servizi.
+
+Endpoint: /eureka <br>
+Tecnologie: Spring Cloud Netflix Eureka
+
+## Utilizzo di Docker
+Costruisci i container Docker:
+
+```plaintext
+docker-compose build
+```
+Avvia i servizi:
+```plaintext
+docker-compose up
+```
+## Usage
+Una volta avviati i servizi, puoi accedere agli endpoint tramite l'API Gateway.
+
+Department Service: http://localhost:8080/department
+Employee Service: http://localhost:8080/employees
+Eureka Server Dashboard: http://localhost:8761
