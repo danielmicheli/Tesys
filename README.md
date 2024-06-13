@@ -19,4 +19,21 @@ L'architettura del progetto è stata trasformata da monolitica a microservizi. O
                            v       |                  
                      +-----------------+       
                      |     Employee    |       
-                     +-----------------+       
+                     +-----------------+
+
+### Microservices
+## Department Service
+Gestisce tutte le operazioni relative ai dipartimenti.
+
+Endpoint: /department
+Tecnologie: Spring Boot, Microsoft SQL Server
+
+## Employee Service
+Gestisce tutte le operazioni relative ai dipendenti.
+
+Endpoint: /employee
+Tecnologie: Spring Boot, Microsoft SQL Server
+
+
+## API Gateway
+L'API Gateway è il punto di ingresso per tutte le richieste client. Smista le richieste ai vari microservizi. 
