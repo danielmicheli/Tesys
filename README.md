@@ -27,7 +27,7 @@ L'architettura del progetto è stata trasformata da monolitica a microservizi. O
 ## Department Service
 Gestisce tutte le operazioni relative ai dipartimenti.
 
-Endpoint: /department
+Endpoint: /department <br>
 Tecnologie: Spring Boot, Microsoft SQL Server
 
 ## Employee Service
